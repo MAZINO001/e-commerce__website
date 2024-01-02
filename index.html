@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!--=============== FLATICON ===============-->
-  <link rel="stylesheet" href="" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
 
   <!--=============== SWIPER CSS ===============-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -98,8 +98,9 @@
 
     <!--=============== CATEGORIES ===============-->
     <section class="categories container section">
-      <h3 class="section__title"></h3>
-      <span>Popular</span> categories
+      <h3 class="section__title">
+        <span>Popular</span> categories
+      </h3>
       <div class="categories__container swiper">
         <div class="swiper-wrapper">
           <a href="shop.html" class="category__item swiper-slide">
@@ -149,13 +150,45 @@
             </h3>
           </a>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"><i class="ri-arrow-right-s-line"></i></div>
+        <div class="swiper-button-prev"><i class="ri-arrow-left-s-line"></i></div>
       </div>
     </section>
 
     <!--=============== PRODUCTS ===============-->
-    <section class="products"></section>
+    <section class="products container section">
+      <div class="tab__btns">
+        <spna class="tab__btn active-tab">Featured</spna>
+        <spna class="tab__btn">Popular</spna>
+        <spna class="tab__btn">New added</spna>
+      </div>
+      <div class="tab__items">
+        <div class="tab__item">
+          <div class="products__container grid">
+            <div class="product__item">
+              <div class="product__banner">
+                <a href="details.html" class="product__images">
+                  <img src="assets/img/product-1-1.jpg" alt="" class="product__img default">
+                  <img src="assets/img/product-1-2.jpg" alt="" class="product__img hover">
+                </a>
+                <div class="product__actions">
+                  <a href="#" class="action__btn" aria-label="Quick View">
+                    <i class="ri-eye-line"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Add to wishlist">
+                    <i class="ri-heart-line"></i>
+                  </a>
+                  <a href="#" class="action__btn" aria-label="Compare">
+                    <i class="ri-shuffle-line"></i>
+                  </a>
+                </div>
+                 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--=============== DEALS ===============-->
     <section class="deals"></section>
