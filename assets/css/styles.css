@@ -117,6 +117,21 @@ table {
   border-collapse: collapse;
 }
 
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--first-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--first-color-alt);
+}
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1320px;
@@ -154,11 +169,7 @@ table {
   font-size: var(--small-font-size);
 }
 
-.flex {
-  display: flex;
-  align-items: center;
-  column-gap: 0.5rem;
-}
+
 
 .new__price {
   color: var(--first-color);
@@ -170,19 +181,22 @@ table {
   font-size: var(--small-font-size);
   text-decoration: line-through;
 }
-.form{
+
+.form {
   row-gap: 1rem;
 }
-.from__group{
-  grid-template-columns: repeat(2,1fr);
+
+.from__group {
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
-.textarea{
+.textarea {
   height: 200px;
   padding-block: 1rem;
   resize: none;
 }
+
 /*=============== HEADER & NAV ===============*/
 .header__top {
   background-color: var(--first-color-alt);
@@ -370,6 +384,12 @@ table {
 .btn--sm {
   height: 40px;
   line-height: 36px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
 }
 
 /*=============== CATEGORIES ===============*/
@@ -1209,6 +1229,170 @@ table {
 
 
 /*=============== CART ===============*/
+.table__container {
+  overflow-x: auto;
+}
+
+.table {
+  table-layout: fixed;
+  margin-bottom: 2rem;
+}
+
+.table tr {
+  border-top: 1px solid var(--border-color-alt);
+}
+
+.table tr:last-child {
+  border-top: 1px solid var(--border-color-alt);
+}
+
+.table tr th:nth-child(1),
+.table tr td:nth-child(1) {
+  width: 216px;
+}
+
+.table tr th:nth-child(2),
+.table tr td:nth-child(2) {
+  width: 400px;
+}
+
+.table tr th:nth-child(3),
+.table tr td:nth-child(3) {
+  width: 108px;
+}
+
+.table tr th:nth-child(4),
+.table tr td:nth-child(4) {
+  width: 210px;
+}
+
+.table tr th:nth-child(5),
+.table tr td:nth-child(5) {
+  width: 214px;
+}
+
+.table tr th:nth-child(6),
+.table tr td:nth-child(6) {
+  width: 142px;
+}
+
+.tabel__img {
+  width: 80px;
+}
+
+.table tr th,
+.table tr td {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.table__title,
+.table__description,
+.tabel__price,
+.table__subtotal,
+.table__trash {
+  font-size: var(--small-font-size);
+}
+
+.table__title {
+  color: var(--first-color);
+}
+
+.table__description {
+  max-width: 250px;
+  margin-block: auto;
+}
+
+.table__trash {
+  color: var(--text-color-light);
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.cart__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.divider {
+  position: relative;
+  text-align: center;
+  margin-block: 3rem;
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  border-top: 2px solid var(--border-color-alt);
+}
+
+.divider i {
+  color: var(--text-color-light);
+  background-color: var(--body-color);
+  font-size: 1.25rem;
+  border-radius: 50%;
+  padding-inline: 1.25rem;
+  position: relative;
+  z-index: 10;
+}
+
+.cart__group {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+}
+
+.cart___shipping .section__title,
+.cart__coupon .section__title,
+.cart__total .section__title {
+  font-size: var(--large-font-size);
+  margin-bottom: 1rem;
+}
+
+.cart__coupon {
+  margin-top: 3rem;
+}
+
+.coupon__form .form__group {
+  align-items: center;
+}
+
+.form__group {
+  display: inline-flex;
+}
+
+.cart__total {
+  border: 1px solid var(--border-color-alt);
+  border-radius: 0.25rem;
+  padding: 1.75rem;
+}
+
+.cart__total-table {
+  margin-bottom: 1rem;
+}
+
+.cart__total-table tr td {
+  border: 1px solid var(--border-color-alt);
+  padding: 0.75rem;
+  width: 50%;
+}
+
+.cart__total-title {
+  font-size: var(--small-font-size);
+}
+
+.cart__total-price {
+  color: var(--first-color);
+  font-weight: var(--weight-700);
+}
+
+.cart__total .btn {
+  display: inline-flex;
+}
 
 /*=============== CART OTHERS ===============*/
 
