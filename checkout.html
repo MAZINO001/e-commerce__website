@@ -91,7 +91,7 @@
     </section>
 
     <!--=============== CHECKOUT ===============-->
-    <section class="checkout section--lg">
+    <section class="checkout section--lg container">
       <div class="checkout__container conatiner grid">
         <div class="checkout__group">
           <h3 class="section__title">
@@ -114,13 +114,13 @@
 
           <table class="order__table">
             <tr>
-              <th>Products</th>
+              <th colspan="2">Products</th>
               <th>Total</th>
             </tr>
             <tr>
               <td><img src="assets/img/product-1-2.jpg" alt="" class="order__img"></td>
               <td>
-                <h3 class="order__title">Yidarton Women Summer Blue</h3>
+                <h3 class="table__title">Yidarton Women Summer Blue</h3>
                 <p class="table__quantity">x 2</p>
               </td>
               <td>
@@ -131,7 +131,7 @@
             <tr>
               <td><img src="assets/img/product-2-1.jpg" alt="" class="order__img"></td>
               <td>
-                <h3 class="order__title">Lbd Moon Women Summer </h3>
+                <h3 class="table__title">Lbd Moon Women Summer </h3>
                 <p class="table__quantity">x 1</p>
               </td>
               <td>
@@ -142,7 +142,7 @@
             <tr>
               <td><img src="assets/img/product-7-1.jpg" alt="" class="order__img"></td>
               <td>
-                <h3 class="order__title">Women's Short Sleeve Loose </h3>
+                <h3 class="table__title">Women's Short Sleeve Loose </h3>
                 <p class="table__quantity">x 2</p>
               </td>
               <td>
@@ -150,20 +150,38 @@
               </td>
             </tr>
             <tr>
-              <td><span class="order__subtotle">SubTotal</span></td>
-              <td><span class="table__price">$280.00</span></td>
+              <td><span class="order__subtitle">SubTotal</span></td>
+              <td colspan="2"><span class="table__price">$280.00</span></td>
             </tr>
 
             <tr>
               <td><span class="order__subtotle">Shipping</span></td>
-              <td><span class="table__price">Free Shipping</span></td>
+              <td colspan="2"><span class="table__price">Free Shipping</span></td>
             </tr>
 
             <tr>
               <td><span class="order__subtotle">Total</span></td>
-              <td><span class="table__price">$280.00</span></td>
+              <td colspan="2"><span class="order__grand-total">$280.00</span></td>
             </tr>
           </table>
+          <div class="payment__methods">
+            <h3 class="checkout__title payment__title">
+              Payment
+            </h3>
+            <div class="payment__option flex">
+              <input type="radio" name="radio" class="payment__input">
+              <label for="" class="payment__label">Direct Bank Transfer</label>
+            </div>
+            <div class="payment__option flex">
+              <input type="radio" name="radio" class="payment__input">
+              <label for="" class="payment__label">Check Payment</label>
+            </div>
+            <div class="payment__option flex">
+              <input type="radio" name="radio" class="payment__input">
+              <label for="" class="payment__label">Paypal</label>
+            </div>
+          </div>
+          <button class="btn btn---md">Place Order</button>
         </div>
       </div>
     </section>
