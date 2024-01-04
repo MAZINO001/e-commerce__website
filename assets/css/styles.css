@@ -1290,11 +1290,13 @@ table {
 .table__description,
 .tabel__price,
 .table__subtotal,
-.table__trash {
+.table__trash,
+.tabel__stock {
   font-size: var(--small-font-size);
 }
 
-.table__title {
+.table__title,
+.tabel__stock {
   color: var(--first-color);
 }
 
