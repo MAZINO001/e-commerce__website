@@ -1495,6 +1495,12 @@ button {
 }
 
 
+.table__weight,
+.table_dimentions {
+  font-size: var(--small-font-size);
+}
+
+
 
 
 
