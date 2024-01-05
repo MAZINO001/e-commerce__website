@@ -38,7 +38,7 @@ var swiperCategories = new Swiper(".categories__container", {
             spaceBetween: 40,
         },
         1024: {
-            slidesPerView: 5,
+            slidesPerView: 4,
             spaceBetween: 50,
         },
         1400: {

@@ -6,17 +6,16 @@
   --header-height: 4rem;
 
   /*========== Colors ==========*/
-  --first-color: hsl(210, 88%, 27%); /* Dark Blue */
---first-color-alt: hsl(200, 44%, 94%); /* Light Blue */
---second-color: hsl(200, 94%, 87%); /* Pale Blue */
---title-color: hsl(240, 13%, 13%); /* Darker Blue */
---text-color: hsl(210, 13%, 32%); /* Dark Blue Text */
---text-color-light: hsl(200, 1%, 56%); /* Light Blue Text */
---body-color: hsl(240, 0%, 100%); /* White */
---container-color: hsl(240, 0%, 93%); /* Light Grey */
---border-color: hsl(200, 36%, 27%); /* Dark Blue Border */
---border-color-alt: hsl(210, 15%, 90%); /* Light Blue Border */
-
+  --first-color: hsl(210, 88%, 27%);
+  --first-color-alt: hsl(200, 44%, 94%);
+  --second-color: hsl(200, 94%, 87%);
+  --title-color: hsl(240, 13%, 13%);
+  --text-color: hsl(210, 13%, 32%);
+  --text-color-light: hsl(200, 1%, 56%);
+  --body-color: hsl(240, 0%, 100%);
+  --container-color: hsl(240, 0%, 93%);
+  --border-color: hsl(200, 36%, 27%);
+  --border-color-alt: hsl(210, 15%, 90%);
   /*Color mode HSL(hue, saturation, lightness) */
   /* --first-color: hsl(176, 88%, 27%);
   --first-color-alt: hsl(129, 44%, 94%);
@@ -57,16 +56,16 @@
 /* Responsive typography */
 @media screen and (max-width: 1200px) {
   :root {
-    --big-font-size: ;
-    --h1-font-size: ;
-    --h2-font-size: ;
-    --h3-font-size: ;
-    --h4-font-size: ;
-    --large-font-size: ;
-    --normal-font-size: ;
-    --small-font-size: ;
-    --smaller-font-size: ;
-    --tiny-font-size: ;
+    --big-font-size: 2.25rem;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.375rem;
+    --h3-font-size: 1.25rem;
+    --h4-font-size: 1.125rem;
+    --large-font-size: 1rem;
+    --normal-font-size:0.9375rem ;
+    --small-font-size: 0.8125rem;
+    --smaller-font-size: 0.6875rem;
+    --tiny-font-size: 0.625rem; 
   }
 }
 
@@ -856,6 +855,7 @@ button {
   font-family: var(--second-color);
   font-size: var(--small-font-size);
   font-weight: var(--weight-600);
+  text-align: center;
 }
 
 .newsletter__form {
@@ -1605,9 +1605,63 @@ button {
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
-@media screen and (max-width: 1400px) {}
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
 
-@media screen and (max-width: 1200px) {}
+  .products__container,
+  .showcase__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .accounts__container {
+    grid-template-columns: 3fr, 9fr;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  .container{
+    max-width: 960px;
+  }
+  .header__top{
+    display: none; 
+  }
+  .nav{
+    height: calc( var(--header-height) + 1.5rem );
+  }
+  .nav__logo-img{
+    width: 116px;
+  }
+  .nav__menu{
+    position: fixed;
+    right: 0;
+    top: 0;
+    max-width: 400px;
+    width: 100%;
+    height: 100%;
+    padding: 1.25rem 2rem;
+    background-color: var(--body-color);
+    z-index: 100;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 2rem;
+    box-shadow: 0 0 15px hsla(0, 0%, 0%, 0.1);
+  }
+  .nav__list{
+    order: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 1.5rem;
+  }
+  .nav__link{
+    font-size: var(--large-font-size);
+  }
+  .header__search .form__input{
+     border-color: var(--first-color);
+  }
+}
 
 /* For medium devices */
 @media screen and (max-width: 992px) {}
