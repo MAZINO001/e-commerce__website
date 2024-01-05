@@ -34,7 +34,7 @@ var swiperCategories = new Swiper(".categories__container", {
             spaceBetween: 20,
         },
         768: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 40,
         },
         1024: {
@@ -62,7 +62,7 @@ var swiperProducts = new Swiper(".new__container", {
             spaceBetween: 20,
         },
         768: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 40,
         },
         1024: {

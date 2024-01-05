@@ -6,8 +6,19 @@
   --header-height: 4rem;
 
   /*========== Colors ==========*/
-  /* Color mode HSL(hue, saturation, lightness) */
-  --first-color: hsl(176, 88%, 27%);
+  --first-color: hsl(210, 88%, 27%); /* Dark Blue */
+--first-color-alt: hsl(200, 44%, 94%); /* Light Blue */
+--second-color: hsl(200, 94%, 87%); /* Pale Blue */
+--title-color: hsl(240, 13%, 13%); /* Darker Blue */
+--text-color: hsl(210, 13%, 32%); /* Dark Blue Text */
+--text-color-light: hsl(200, 1%, 56%); /* Light Blue Text */
+--body-color: hsl(240, 0%, 100%); /* White */
+--container-color: hsl(240, 0%, 93%); /* Light Grey */
+--border-color: hsl(200, 36%, 27%); /* Dark Blue Border */
+--border-color-alt: hsl(210, 15%, 90%); /* Light Blue Border */
+
+  /*Color mode HSL(hue, saturation, lightness) */
+  /* --first-color: hsl(176, 88%, 27%);
   --first-color-alt: hsl(129, 44%, 94%);
   --second-color: hsl(34, 94%, 87%);
   --title-color: hsl(0, 0%, 13%);
@@ -16,7 +27,7 @@
   --body-color: hsl(0, 0%, 100%);
   --container-color: hsl(0, 0%, 93%);
   --border-color: hsl(129, 36%, 27%);
-  --border-color-alt: hsl(113, 15%, 90%);
+  --border-color-alt: hsl(113, 15%, 90%); */
 
   /*========== Font and typography ==========*/
   /* .5rem = 8px | 1rem = 16px ... */
