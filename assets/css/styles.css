@@ -1626,6 +1626,7 @@ button {
     grid-template-columns: 3fr, 9fr;
   }
 
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -1672,6 +1673,7 @@ button {
     align-items: flex-start;
     row-gap: 2rem;
   }
+
 
   .nav__link {
     font-size: var(--large-font-size);
@@ -1837,7 +1839,6 @@ button {
   }
 
 
-
   .table tr th:nth-child(1),
   .table tr td:nth-child(1) {
     width: 140px;
@@ -1963,13 +1964,13 @@ button {
     align-items: center;
   }
 
-  .cart___shipping{
+  .cart___shipping {
     width: 96%;
   }
 
-  .cart___shipping input{
-    
-}
+  .cart___shipping input {
+    width: 100%;
+  }
 
   .cart__coupon {
     width: 96%;
