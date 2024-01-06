@@ -250,10 +250,6 @@ button {
   align-items: center;
 }
 
-.nav__list{
-  background-color: red;
-
-}
 .nav {
   height: calc(var(--header-height) + 2.5rem);
   justify-content: space-between;
