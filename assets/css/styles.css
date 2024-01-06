@@ -1626,7 +1626,6 @@ button {
     grid-template-columns: 3fr, 9fr;
   }
 
-
 }
 
 @media screen and (max-width: 1200px) {
